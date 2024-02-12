@@ -1,117 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   transition: 300ms;
+  font-family: "Inter", serif;
 }
 
 html {
   background-color: #202020;
 }
 
-.inputs {
-  width: 425px;
-  height: 700px;
-  background-color: #101010;
-  position: absolute;
-  top: 10%;
-  bottom: 10%;
-  left: 15%;
-  margin: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 8px 2px #101010;
-}
-.inputs ul {
-  font-family: Arial, Helvetica, sans-serif;
-  list-style-type: none;
-  display: grid;
-  margin-top: 50px;
-  flex-direction: column;
-  gap: 2em;
+.Header {
+  width: 100%;
+  height: 100px;
+  padding: 55px;
   place-items: center;
+  display: flex;
+  background-color: #202020;
+  box-shadow: 0 0 15px 5px #101010;
 }
-.inputs ul li h1 {
-  color: white;
-  text-align: center;
-  font-size: 21px;
+.Header h1 {
+  font-weight: 800;
+  font-family: "URW Gothic", serif;
+  filter: drop-shadow(0 0 10px #808080);
+  color: #5be68e;
+  width: 250px;
 }
-.inputs ul li label {
-  color: white;
+.Header ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  justify-content: right;
+  gap: 1em;
+  filter: drop-shadow(0 0 10px #808080);
 }
-.inputs ul li input[type=number] {
-  margin-left: 5px;
-  width: 30px;
-  border-radius: 2px;
+.Header ul li input[type=number] {
+  padding-left: 10px;
+  width: 150px;
   outline: none;
   border: none;
+  height: 25px;
 }
-.inputs ul li button {
-  transition: 300ms;
+.Header ul li button {
+  outline: none;
+  border: none;
+  height: 25px;
+  font-size: 12px;
+  width: 100px;
   cursor: pointer;
-  padding: 3px 10px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-}
-.inputs ul li button:hover {
-  color: #303030;
-  box-shadow: 0 0 8px 3px #4ad66d;
+  transition: 300ms;
   background-color: #4ad66d;
 }
-.inputs .outputs {
-  transition: 300ms;
-  width: 425px;
+.Header ul li button:hover {
+  border-radius: 8px;
+}
+
+.Body {
+  width: 400px;
+  height: 650px;
+  position: absolute;
+  top: 10%;
+  bottom: 5%;
+  right: 15%;
+  display: grid;
+  place-items: center;
   margin: auto;
-  height: 300px;
-  position: relative;
-  bottom: -3%;
-  border-radius: 5px;
+  border-radius: 8px;
+}
+.Body .outputs {
+  width: 400px;
+  margin: auto;
+  padding: 35px;
+  height: 100%;
+  background-color: #303030;
   display: grid;
   justify-content: center;
   place-items: center;
+  border-radius: 5px;
 }
-.inputs .outputs ul {
+.Body .outputs h1 {
+  color: #4ad66d;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+.Body .outputs ul {
   color: white;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  width: 250px;
-  margin: auto;
   gap: 1em;
-  height: 250px;
-  margin-left: 25px;
+  justify-content: center;
   flex-wrap: wrap;
 }
-.inputs .outputs ul li {
-  width: 60px;
-  height: 60px;
-  background-color: #303030;
+.Body .outputs ul li {
+  width: 75px;
+  box-shadow: 0 0 8px 2px #202020;
+  height: 75px;
+  background-color: #202020;
   border-radius: 8px;
   display: grid;
   place-items: center;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .other {
-  width: 800px;
-  height: 700px;
-  background-color: #101010;
+  width: 850px;
+  height: 650px;
   position: absolute;
-  right: 15%;
+  left: 15%;
   font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 0 0 8px 2px #101010;
   border-radius: 8px;
   top: 10%;
   margin: auto;
-  bottom: 10%;
+  bottom: 5%;
 }
 .other .totals {
   width: 400px;
-  height: 550px;
+  height: 100%;
   background-color: #303030;
   bottom: 5%;
   top: 5%;
-  left: 5%;
+  left: 0;
   margin: auto;
   position: absolute;
   border-radius: 8px;
@@ -120,8 +130,8 @@ html {
 }
 .other .totals h1 {
   color: #4ad66d;
-  text-align: center;
   font-size: 24px;
+  text-align: center;
   margin-top: -110px;
 }
 .other .totals ul {
@@ -145,15 +155,14 @@ html {
   display: grid;
   place-items: center;
   color: #4ad66d;
-  font-size: 13px;
+  font-size: 11px;
 }
 .other .specifiedCalculating {
-  width: 300px;
-  height: 550px;
+  width: 350px;
+  height: 100%;
   border-radius: 8px;
   background-color: #303030;
-  top: 10.5%;
-  right: 5%;
+  right: 0;
   margin: auto;
   position: absolute;
 }
@@ -164,11 +173,11 @@ html {
   margin-top: 30px;
 }
 .other .specifiedCalculating h5 {
-  margin-top: 20px;
+  margin-top: 25px;
   color: white;
   text-align: center;
   color: white;
-  font-size: 13px;
+  font-size: 13.5px;
 }
 .other .specifiedCalculating h5 span {
   color: #4ad66d;

@@ -6,25 +6,23 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
 <body>
-
-    <span class="inputs">
+    <header class="Header">
+        <h1>HAFO-H</h1>
         <ul>
             <li>
-                <h1>Halk Arz Tavan Ölçümü</h1>
+                <input id="ha-price" type="number" placeholder="Lot fiyatı">
             </li>
             <li>
-                <label for="ha-price">Lot Fiyatı: </label>
-                <input id="ha-price" type="number">
-            </li>
-            <li>
-                <label for="ha-lot">Lot Miktarı: </label>
-                <input id="ha-lot" type="number">
+                <input id="ha-lot" placeholder="Lot sayısı" type="number">
             </li>
             <li>
                 <button id="ha-calc">Hesapla</button>
             </li>
         </ul>
+    </header>
+    <span class="Body">
         <div class="outputs">
+            <h1>Lot Fiyat Dizisi</h1>
             <ul id="outputs-ul">
                 <li></li>
                 <li></li>
