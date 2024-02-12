@@ -1,7 +1,7 @@
 # Hafo | Halk Arz Fiyat Ölçme
 Hafo Halk Arzların 12. Tavanına kadar kazanç hesaplamasını kolaylaştırmak ve işleri daha hızlı hale getirmek için tasarlanmıştır. Temelini linux ile atan Hafo, önümüzdeki süreç zarfında windows işletim sistemi ve web sitesi ile ulaşımını kolay hale getirecektir.
 
-![hatosson](https://github.com/hacimertgokhan/Hafo/assets/64479768/b896b2e1-ab46-43b4-8d08-5341fcc98c83)
+![newhafoh](https://github.com/hacimertgokhan/Hafo/assets/64479768/cff0ad47-a82f-4f2a-ab88-eab16ada7bff)
  
 Hafo şu anda yalnızca linux tabanlı işletim sistemlerini desteklemektedir.
 
