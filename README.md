@@ -15,10 +15,3 @@ Hafo şu anda yalnızca linux tabanlı işletim sistemlerini desteklemektedir.
 - BIST ve BofA`nın güncel veri değerlerini gösterme,
 - Alış/Satış Döviz kurunu güncel olarak gösterme ve Artma azalma takibi,
 
-### Geliştirme Süreci Hak.,
-Hafo bireysel geliştirilen bir programdır, herhangi bir şirketten ya da kuruluştan yardım ya da destek almamaktadır.
-Baş geliştirici olan Hacı Mert Gökhan tarafından bireysel kodlanan bu proje, düzenli ve gerekli güncellemeler ile 1 senelik bir destek istikrarı sağlamayı planlamaktadır.
-
-
-### İletişim, Destek ve Sponsorluk için,
-İletişim için: **hacimertgokhan@gmail.com** ya da kişisel instagram adresim olan **hacimertgokhan** adresi üzerinden iletişime geçebilirsiniz. 
